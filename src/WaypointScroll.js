@@ -1,5 +1,5 @@
 const WaypointScroll = {
-  scrollElement: window,
+  scrollElement: window || {},
   lastScrollX: 0,
   lastScrollY: 0,
   direction: {
