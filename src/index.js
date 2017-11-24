@@ -5,7 +5,7 @@ import WaypointScroll from './WaypointScroll.js'
 import Waypoint from './Waypoint.vue'
 
 const VueWaypoint = {
-  _scrollElement: window,
+  _scrollElement: typeof window !== 'undefined' ? window : {},
   _throttledHandler: undefined,
   install (Vue) {
     // throttle
